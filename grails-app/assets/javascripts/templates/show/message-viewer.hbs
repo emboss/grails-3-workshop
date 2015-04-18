@@ -1,0 +1,18 @@
+<div class="message-show">
+  <div class="message-container">
+    <h1>{{title}}</h1>
+    <div class="message-details form-horizontal">
+      <div class="form-group">
+        <label class="col-md-2">{{t 'message.from.label'}}:</label>
+        <div class="from col-md-10">{{from.email}}</div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-2">{{t 'message.dateCreated.label'}}:</label>
+        <div class="sent col-md-10">{{dateTime dateCreated}}</div>
+      </div>
+    </div>
+    <div class="message-body">
+      {{body}}
+    </div>
+  </div>
+</div>

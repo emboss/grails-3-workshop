@@ -1,0 +1,8 @@
+*~
+*.swp
+*.swo
+*.swn
+*.db
+build/
+.idea/
+.gradle/

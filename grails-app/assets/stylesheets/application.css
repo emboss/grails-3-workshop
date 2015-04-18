@@ -1,0 +1,22 @@
+/* CSS libraries
+*= require lib/bootstrap-3.3.4.min
+*= require lib/bootstrap-theme-3.3.4.min
+*= require lib/font-awesome-4.3.0/font-awesome
+
+/* Less files
+*= require less/manifest
+
+* Include CSS at the end of this file
+*= require_self
+*/
+
+.spinner {
+  background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
+  height: 16px;
+  width: 16px;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-indent: -9999px;
+}
