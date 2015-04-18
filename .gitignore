@@ -1,0 +1,8 @@
+*~
+*.swp
+*.swo
+*.swn
+build/
+.gradle/
+.idea/
+devDb*
