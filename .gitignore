@@ -1,0 +1,10 @@
+*~
+*.swp
+*.swo
+*.swn
+build/
+.idea/
+.gradle/
+.jruby-container/
+.sass-cache/
+.sass-work/
