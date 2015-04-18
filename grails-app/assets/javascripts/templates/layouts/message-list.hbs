@@ -1,0 +1,12 @@
+<div class="messages">
+  <header class="row">
+    <h1 class="col-md-8">
+      {{t 'message.list.title'}}
+    </h1>
+    <div class="actions js-actions col-md-4"></div>
+  </header>
+  {{#if status}}
+    <div class="message status js-status">{{status}}</div>
+  {{/if}}
+  <div class="js-grid"></div>
+</div>
