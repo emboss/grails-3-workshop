@@ -1,0 +1,1 @@
+<g:link class="create" action="create"><g:message code="message.create.label"/></g:link>
