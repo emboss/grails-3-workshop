@@ -1,0 +1,8 @@
+.welcome-index header h1 {
+  color: blue;
+}
+
+#messages {
+    text-align: center;
+    color: red;
+}

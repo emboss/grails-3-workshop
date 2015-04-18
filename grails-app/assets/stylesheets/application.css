@@ -1,0 +1,30 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+* CSS libraries
+*= require lib/bootstrap-3.3.4.min
+*= require lib/bootstrap-theme-3.3.4.min
+*
+* App-specific CSS
+*= require_tree ./app
+*
+* Include CSS at the end of this file
+*= require_self
+*/
+
+.spinner {
+  background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
+  height: 16px;
+  width: 16px;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-indent: -9999px;
+}
