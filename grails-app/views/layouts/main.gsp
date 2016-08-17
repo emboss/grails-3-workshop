@@ -23,6 +23,7 @@
     </div>
 
     <asset:javascript src="application.js" charset="utf-8"/>
+    <script src="${g.resource(dir: 'javascripts', file: 'hello.js')}"></script>
     <g:applyLayout name="js">
       <g:pageProperty name="page.js"/>
     </g:applyLayout>

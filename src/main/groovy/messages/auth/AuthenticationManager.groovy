@@ -37,7 +37,8 @@ class AuthenticationManager extends WebSecurityConfigurerAdapter implements Grai
                 "/",
                 "/login",
                 "/logout",
-                "/signup"
+                "/signup",
+                "/static/**"
               ).permitAll()
               .antMatchers(
                 HttpMethod.POST,
