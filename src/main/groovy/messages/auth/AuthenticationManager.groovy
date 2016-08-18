@@ -67,6 +67,7 @@ class AuthenticationManager extends WebSecurityConfigurerAdapter implements Grai
               .and()
             .headers()
               .frameOptions().disable() // to allow accessing dbconsole, again, don't do this in production !!!
+              .and()
             .csrf().disable() // don't ever do this in production!!!
     }
 
