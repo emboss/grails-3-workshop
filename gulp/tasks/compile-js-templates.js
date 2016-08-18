@@ -17,7 +17,6 @@ gulp.task('compile-js-templates', function() {
       client: true // compile to JS
     }))
     .pipe(wrap())
-    .pipe(gulp.dest(dest))
-    .pipe(browserSync.reload({ stream: true }));
+    .pipe(gulp.dest(dest));
 });
 

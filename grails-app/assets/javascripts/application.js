@@ -11,7 +11,7 @@
 //= require lib/bootstrap-3.3.4.min
 //= require lib/backbone-1.1.2.min
 //= require lib/backbone.marionette-2.4.1.min
-//= require lib/handlebars-3.0.3.min
+//= require lib/handlebars-4.0.5.min
 //= require lib/i18next-1.8.0.min
 //= require lib/moment-2.10.2.min
 //

@@ -1,3 +1,16 @@
-body {
-  background: red;
-}
+/* Includes, variables, etc. */
+@import "includes/colors";
+@import "includes/variables";
+@import "includes/layout";
+
+/* Import libraries, needs to happen after variables to reflect any variable overrides */
+@import "includes/libraries";
+
+/* Application-specific */
+@import "app/login";
+@import "app/signup";
+@import "app/welcome";
+@import "app/user";
+@import "app/message";
+@import "app/shared";
+

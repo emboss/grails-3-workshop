@@ -1,10 +1,5 @@
-/* CSS libraries
-*= require lib/bootstrap-3.3.4.min
-*= require lib/bootstrap-theme-3.3.4.min
-*= require lib/font-awesome-4.3.0/font-awesome
-
-/* Less files
-*= require less/manifest
+/* Gulp-based SCSS compilation result
+*= require ../vendor/css/application
 
 * Include CSS at the end of this file
 *= require_self

@@ -75,7 +75,7 @@ grails:
           handlebars:
             templateRoot: 'templates'
             templatePathSeparator: '/'
-            scanPath: 'lib/handlebars-3.0.3.min.js'
+            scanPath: 'lib/handlebars-4.0.5.min.js'
     mime:
         disable:
             accept:

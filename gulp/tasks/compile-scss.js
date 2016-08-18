@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     bourbon = require('node-bourbon'),
+    del = require('del'),
     config = require('../config');
 
 gulp.task('compile-scss', function() {
@@ -17,7 +18,7 @@ gulp.task('compile-scss', function() {
     .pipe(gulp.dest(config.buildPath + '/css'));
 });
 
-gulp.task('dist-css', function() {
+gulp.task('dist-scss', function() {
   del.sync([config.distPath + 'css/**/*']);
 
   return gulp.src(config.buildPath + '/css/*.css')

@@ -19,7 +19,7 @@ buildscript {
 version "0.1"
 group "messages"
 
-apply plugin: "war"
+//apply plugin: "war"
 apply plugin: "asset-pipeline"
 apply plugin: 'eclipse'
 apply plugin: 'idea'
@@ -31,6 +31,10 @@ ext {
     gradleWrapperVersion = project.gradleWrapperVersion
 }
 
+assetCompile {
+    dependsOn 'compile-gulp-assets'
+}
+
 assets {
     minifyJs = true
     minifyCss = true
@@ -39,7 +43,7 @@ assets {
         handlebars: [
             templateRoot: 'templates',
             templatePathSeperator: '/',
-            scanPath: 'lib/handlebars-3.0.3.min.js'
+            scanPath: 'lib/handlebars-4.0.5.min.js'
         ]
     ]
 
@@ -86,4 +90,8 @@ dependencies {
 
 task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
+}
+
+task 'compile-gulp-assets'(type:Exec) {
+    commandLine 'gulp', 'dist'
 }

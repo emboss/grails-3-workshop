@@ -4,8 +4,10 @@ var gulp = require('gulp'),
     babelify = require('babelify'),
     source = require('vinyl-source-stream'),
     watchify = require('watchify'),
+    uglify = require('gulp-uglify'),gl
     bundleLogger = require('./compile-js/bundleLogger'),
     handleErrors = require('./compile-js/handleErrors'),
+    del = require('del'),
     config = require('../config').browserify;
 
 var browserifyTask = function(callback, devMode) {
