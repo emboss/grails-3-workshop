@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta name="layout" content="main">
-    <title>Gun Tach</title>
+    <title>Hallo</title>
     <asset:stylesheet src="custom/welcome/index.css"/>
   </head>
   <body>
