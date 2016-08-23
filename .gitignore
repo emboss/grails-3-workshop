@@ -8,3 +8,4 @@ build/
 .jruby-container/
 .sass-cache/
 .sass-work/
+*.db
