@@ -8,10 +8,11 @@ var gulp = require('gulp'),
     bundleLogger = require('./compile-js/bundleLogger'),
     handleErrors = require('./compile-js/handleErrors'),
     del = require('del'),
-    config = require('../config').browserify;
+    config = require('../config'),
+    browserifyConfig = config.browserify;
 
 var browserifyTask = function(callback, devMode) {
-  var bundleQueue = config.bundleConfigs.length;
+  var bundleQueue = browserifyConfig.bundleConfigs.length;
 
   var browserifyThis = function(bundleConfig) {
 
@@ -58,7 +59,7 @@ var browserifyTask = function(callback, devMode) {
     return bundle();
   };
 
-  config.bundleConfigs.forEach(browserifyThis);
+  browserifyConfig.bundleConfigs.forEach(browserifyThis);
 };
 
 gulp.task('browserify', browserifyTask);

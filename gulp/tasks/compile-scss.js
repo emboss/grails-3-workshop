@@ -18,7 +18,7 @@ gulp.task('compile-scss', function() {
     .pipe(gulp.dest(config.cssBuildPath));
 });
 
-gulp.task('dist-scss', function() {
+gulp.task('dist-scss', ['compile-scss'], function() {
   del.sync([config.cssDistPath + '/**/*']);
 
   return gulp.src(config.cssBuildPath + '/*.css')
