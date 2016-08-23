@@ -29,6 +29,11 @@
   }
 }
 
+.current-time {
+  text-align: center;
+  color: $nephritis
+}
+
 @media (min-width: $screen-md-min) {
   .message-index {
     .messages {

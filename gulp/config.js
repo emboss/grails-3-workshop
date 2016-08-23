@@ -1,6 +1,8 @@
 var nodeModulesPath = './node_modules',
     assetPath = './src/assets',
-    buildPath = './build/assets';
+    buildPath = './build/assets',
+    jsBuildPath = buildPath + '/javascripts/vendor',
+    distPath = './grails-app/assets';
 
 module.exports = {
   bootstrapPath: nodeModulesPath + '/bootstrap-sass/assets/stylesheets',
@@ -8,9 +10,12 @@ module.exports = {
   fontawesomeFiles: nodeModulesPath + '/font-awesome/fonts/*',
   assetPath: assetPath,
   buildPath: buildPath,
-  distPath: './grails-app/assets/vendor',
-  imageDistPath: './grails-app/assets/images',
-  fontDistPath: './grails-app/assets/fonts',
+  cssBuildPath: buildPath + '/stylesheets/vendor',
+  jsBuildPath: jsBuildPath,
+  imageDistPath: distPath + '/images',
+  fontDistPath: distPath + '/fonts',
+  cssDistPath: distPath + '/stylesheets/vendor',
+  jsDistPath: distPath + '/javascripts/vendor',
   browserSync: {
     proxy: 'localhost:8080'
   },
@@ -18,7 +23,7 @@ module.exports = {
     bundleConfigs: [{
       paths: [assetPath + '/javascripts'],
       entries: assetPath + '/javascripts/application.js',
-      dest: buildPath + '/js',
+      dest: jsBuildPath,
       outputName: 'application.js',
       extensions: ['.js']
     }]

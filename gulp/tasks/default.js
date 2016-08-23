@@ -16,7 +16,11 @@ gulp.task('initial-compile-and-copy', [
   'compile-scss',
   'watch'
 ], function() {
-  del.sync([config.distPath + '/**/*']);
+  del.sync([
+    config.jsDistPath + '/**/*',
+    config.cssDistPath + '/**/*'
+  ]);
+
   return copyBuildAssets();
 });
 

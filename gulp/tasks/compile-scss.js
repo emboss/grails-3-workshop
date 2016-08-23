@@ -15,13 +15,13 @@ gulp.task('compile-scss', function() {
       ]),
       errLogToConsole: true
     }).on('error', sass.logError))
-    .pipe(gulp.dest(config.buildPath + '/css'));
+    .pipe(gulp.dest(config.cssBuildPath));
 });
 
 gulp.task('dist-scss', function() {
-  del.sync([config.distPath + 'css/**/*']);
+  del.sync([config.cssDistPath + '/**/*']);
 
-  return gulp.src(config.buildPath + '/css/*.css')
-    .pipe(gulp.dest(config.distPath + '/stylesheets'));
+  return gulp.src(config.cssBuildPath + '/*.css')
+    .pipe(gulp.dest(config.cssDistPath));
 });
 

@@ -12,5 +12,5 @@ gulp.task('watch', ['watchify', 'browser-sync'], function() {
   // Recompile the client-side JS templates
   gulp.watch([config.assetPath + '/templates/**/*.pug'], ['compile-js-templates']);
   // When assets are built, we copy them to the static resource directory
-  gulp.watch([config.buildPath + '/**/*.*'], ['copy-build-assets']);
+  gulp.watch([config.buildPath + '/**/*'], ['copy-build-assets']);
 });

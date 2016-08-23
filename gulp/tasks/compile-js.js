@@ -64,16 +64,16 @@ var browserifyTask = function(callback, devMode) {
 gulp.task('browserify', browserifyTask);
 
 gulp.task('dist-js', ['minified-js'], function() {
-  del.sync([config.distPath + 'js/**/*']);
+  del.sync([config.jsDistPath + '/**/*']);
 
-  return gulp.src(config.buildPath + '/js/*.js')
-      .pipe(gulp.dest(config.distPath + '/javascripts'));
+  return gulp.src(config.jsBuildPath + '/*.js')
+      .pipe(gulp.dest(config.jsDistPath));
 });
 
 gulp.task('minified-js', ['compile-production-js'], function() {
-  return gulp.src(config.buildPath + '/js/*.js')
+  return gulp.src(config.jsBuildPath + '/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest(config.buildPath + '/js'));
+    .pipe(gulp.dest(config.jsBuildPath));
 });
 
 gulp.task('compile-production-js', ['compile-js-templates', 'lint'], function(callback) {

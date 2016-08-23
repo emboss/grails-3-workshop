@@ -1,5 +1,5 @@
 /* Gulp-based SCSS compilation result
-*= require ../vendor/css/application
+*= require vendor/application
 
 * Include CSS at the end of this file
 *= require_self

@@ -34,7 +34,7 @@
 // Pull in application-specific JS files
 //= require_tree app
 //
-//= require ../vendor/js/application
+//= require vendor/application
 
 (function() {
 
